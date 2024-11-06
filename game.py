@@ -14,12 +14,8 @@ cell_size = 50  # Size of each cell in pixels
 mark_size = 20  # Size of the mark in each cell (mine or safe)
 
 # Multipliers based on the difficulty level and the number of safe cells revealed
-multipliers = {
-    1: [1.03, 1.08, 1.12, 1.18, 1.24, 1.30, 1.37, 1.46, 1.55, 1.65],
-    2: [1.08, 1.17, 1.29, 1.41, 1.56, 1.74, 1.94, 2.18, 2.47, 2.83],
-    3: [1.12, 1.29, 1.48, 1.71, 2.0, 2.35, 2.79, 3.35, 4.07, 5.0],
-}
-
+multipliers = {}
+# please insert your own multipliers.
 def draw_board():
     """Draws the game board based on the board size and cell size."""
     for y in range(board_size):
